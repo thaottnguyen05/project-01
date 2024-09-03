@@ -213,9 +213,9 @@
         <center>
             <img src="images/Maria Rosa Henson-480.jpg" alt="Portrait of Maria Rosa Henson">
 
-            <form action="" method="get" onsubmit="navigateToPage(); return false;">
+            <form action="index1.html" method="get">
                 <label for="menu">Learn more about other survivors:</label><br><br>
-                <select id="menu" name="menu">
+                <select id="menu" name="menu" onchange="this.form.action=this.value">
                     <option value="index1.html">Kim Hak-sun</option>
                     <option value="index2.html">Kim Bok-dong</option>
                     <option value="index3.html">Shirota Suzuko</option>
@@ -225,18 +225,11 @@
                     <option value="index7.html">Yoo Hee-nam</option>
                     <option value="index8.html">Kim Kyung-soon</option>
                     <option value="index9.html">Kim Soon-duk</option>
-
                 </select><br><br>
                 <input type="submit" value="Go">
             </form>
 
-            <script>
-                function navigateToPage() {
-                    var menu = document.getElementById('menu');
-                    var selectedPage = menu.options[menu.selectedIndex].value;
-                    window.location.href = selectedPage;
-                }
-            </script>
+            
         </center>
     </section>
 
